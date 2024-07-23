@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 
 export default function Root() {
-    return (
-        <>
-            <Header/>
-            <main>
-                <Outlet/>
-            </main>
-            <Footer/>
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
+};
