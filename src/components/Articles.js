@@ -8,9 +8,9 @@ export default function Articles () {
   const articles = useSelector(selectArticles);
 
   // Grab URLSearchParams object from useSearchParams hook
-  
+  const [searchParams, setSearParams] = useSearchParams();
   // Get the queryParams from object returned from useSearchParams and set to `title`
-  const title = '';
+  const title = searchParams.get("title");
 
   const filteredArticles = title ? filterArticles(title, articles) : Object.values(articles);
 
